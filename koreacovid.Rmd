@@ -73,4 +73,4 @@ The test shows us that men are 2.3 times more likely than a woman is. the confid
 
 
 ## Conclusions
-
+Even though there were more females than males who were part of this experiment there were way more men that died by covid.The numerical results shows us that the men were dying 2 times more faster than female.The test shows us that men are 2.3 times more likely than a woman is. the confidence level is 95% that 1.4 is the low and 3.9 is the high so the odds ratio is 2.3. Dying isn't independent if it was men and woman death rate would be the same but only the men have been dying the most.
