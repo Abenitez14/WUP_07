@@ -35,11 +35,18 @@ Table of patients:
 with(kRdata, table(Sex, result))
 
 ```
-
+```{r eval=FALSE}
+kRdata <- kRdata %>%
+mutate(across(where(is.character), as.factor))
+```
 ## We create two bar charts - one based on frequency and the other on percent, use ggplot commands to do this
+```{r}
+barchartGC(~result + Sex,data=kRdata)
+barchartGC(~result + Sex,data=kRdata, type="percent")
 
-`
+```
 
+Even though there were more females than males who were part of this experiment there were way more men that died by covid. 
   
 
 
@@ -48,7 +55,13 @@ with(kRdata, table(Sex, result))
 
   
 ## Numerical results
+```{r}
+table1 <- xtabs(~result + Sex, data=kRdata)
+rowPerc(table1)
+colPerc(table1)
+```
 
+The numerical results shows us that the men were dying 2 times more faster than female.
 
 ## Inferential results 
 
