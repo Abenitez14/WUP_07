@@ -64,8 +64,12 @@ colPerc(table1)
 The numerical results shows us that the men were dying 2 times more faster than female.
 
 ## Inferential results 
-
-
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+The test shows us that men are 2.3 times more likely than a woman is. the confidence leve is 95% that 1.4 is the low and 3.9 is the high so the odds ratio is 2.3.
 
 
 ## Conclusions
